@@ -1,0 +1,175 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  
+  body {
+  background-image: url('img/background.jpg');
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .todo-app {
+  max-width: 400px;
+  margin: 50px auto;
+  background-color: #CAA6A6;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  animation: fade-in 0.5s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+  from {
+  opacity: 0;
+  transform: translateY(-20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  
+  h1 {
+  text-align: center;
+  color: #333;
+  animation: slide-down 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-down {
+  from {
+  opacity: 0;
+  transform: translateY(-20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  
+  form {
+  display: flex;
+  margin-bottom: 20px;
+  animation: slide-up 0.5s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+  from {
+  opacity: 0;
+  transform: translateY(20px);
+  }
+  to {
+  opacity: 1;
+  transform: translateY(0);
+  }
+  }
+  
+  #todo-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #333;
+  }
+  
+  button {
+  background-color: #B47B84;
+  color: #333;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  animation: fade-in 0.5s ease-in-out;
+  }
+  
+  #todo-counter {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  animation: fade-in 0.5s ease-in-out;
+  }
+  
+  #todo-list {
+  list-style-type: none;
+  padding: 0;
+  }
+  
+  li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  animation: slide-up 0.5s ease-in-out;
+  }
+  
+  .checkbox {
+  margin-right: 10px;
+  position: relative;
+  }
+  
+  .task {
+  flex-grow: 1;
+  color: #333;
+  }
+  
+  .completed {
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  color: #B47B84;
+  }
+  
+  .edit-button,
+  .delete-button {
+  background-color: #B47B84;
+  color: #333;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px; /* Adjust the margin-left value to create space between task description and buttons */
+  animation: fade-in 0.5s ease-in-out;
+  }
+  
+  button:hover,
+  .edit-button:hover,
+  .delete-button:hover {
+  background-color: #8C4B55;
+  color: #FFF;
+  }
+  
+  /* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .todo-app {
+    max-width: 300px;
+  }
+}
+
+/* Media Query for low resolution Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  .todo-app {
+    max-width: 300px;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .todo-app {
+    max-width: 400px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1550px) {
+  .todo-app {
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .todo-app {
+    max-width: 200px;
+  }
+}
