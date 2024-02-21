@@ -1,5 +1,7 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Handlee", cursive;
+  font-weight: 700;
+  font-style: normal;
   margin: 0;
   padding: 0;
   }
@@ -32,9 +34,12 @@ body {
   }
   
   h1 {
-  text-align: center;
-  color: #333;
-  animation: slide-down 0.5s ease-in-out;
+   font-family: "Handlee", cursive;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    color: #333;
+    animation: slide-down 0.5s ease-in-out;
   }
   
   @keyframes slide-down {
@@ -65,7 +70,45 @@ body {
   }
   }
   
+  .search-container {
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+  }
+  
+  #search-input {
+    font-family: "Handlee", cursive;
+    font-weight: 500;
+    font-style: normal;
+    padding: 3px;
+    border: 1px solid #B47B84;
+    border-radius: 4px;
+    margin-right: 2px;
+  }
+  
+  #search-button {
+    font-family: "Handlee", cursive;
+    font-weight: 700;
+    font-style: normal;
+    padding: 3px 3px;
+    background-color: #B47B84;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  #search-button:hover {
+    background-color: #8C4B55;
+  }
+  
+  #search-button:focus {
+    outline: none;
+  }
   #todo-input {
+    font-family: "Handlee", cursive;
+    font-weight: 500;
+    font-style: normal;
   flex-grow: 1;
   padding: 10px;
   border: none;
@@ -75,6 +118,9 @@ body {
   }
   
   button {
+    font-family: "Handlee", cursive;
+    font-weight: 700;
+    font-style: normal;
   background-color: #B47B84;
   color: #333;
   border: none;
@@ -108,6 +154,8 @@ body {
   margin-right: 10px;
   position: relative;
   }
+
+ 
   
   .task {
   flex-grow: 1;

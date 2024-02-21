@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
     <meta name="description" content="A simple todo app">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <script src="index.js"></script>
 </head>
 <body>
     <div class="todo-app">
-        <h1>Todo 📝</h1>
+        <h1>Todo📝</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="search todos">
+            <button id="search-button">search</button>
+          </div>
         <form id="todo-form">
             <input type="text" id="todo-input" placeholder="write something awesome to do">
             <button type="submit">Add</button>
