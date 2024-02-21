@@ -60,8 +60,8 @@ if (storedTodos) {
       listItem.innerHTML = `
         <input type="checkbox" class="checkbox">
         <span class="task">${todo.task}</span>
-        <button class="edit-button">Edit</button>
-        <button class="delete-button">Delete</button>
+        <button class="edit-button">&#9998;</button>
+        <button class="delete-button">&#10006;</button>
       `;
   
       // Set the completed state of the todo item
