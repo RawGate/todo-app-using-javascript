@@ -28,27 +28,20 @@ if (storedTodos) {
       const todoInput = document.getElementById('todo-input');
       const task = todoInput.value.trim();
   
-      if (task !== '') {
+      if (task) {
         // Create a new todo object
         const todo = {
           id: Date.now(),
           task: task,
           completed: false
         };
-  
         // Add the todo to the todos array
         todos.push(todo);
   
         // Save the updated todos array to local storage
         localStorage.setItem('todos', JSON.stringify(todos));
-  
-        // Render the new todo item
         renderTodoItem(todo);
-  
-        // Clear the input field
         todoInput.value = '';
-  
-        // Update the counter
         updateCounter(1);
       }
     });
@@ -80,11 +73,7 @@ if (storedTodos) {
   
         // Save the updated todos array to local storage
         localStorage.setItem('todos', JSON.stringify(todos));
-  
-        // Remove the list item from the DOM
         listItem.remove();
-  
-        // Update the counter
         updateCounter(-1);
       });
   
