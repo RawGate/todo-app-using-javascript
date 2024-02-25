@@ -100,6 +100,7 @@ body {
   
   #search-button:hover {
     background-color: #8C4B55;
+    color: #FFF;
   }
   
   #search-button:focus {
